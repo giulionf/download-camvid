@@ -44,7 +44,7 @@ camvid
 └── ...
 ```
 
-Im also providing a colormap for labels in python format:
+The following dict can be used as colormap:
 ```
 COLORMAP = {
 	(64, 128, 64): 1,  # Animal
