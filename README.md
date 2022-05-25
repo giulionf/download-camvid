@@ -46,40 +46,66 @@ camvid
 
 The following dict can be used as colormap:
 ```
-COLORMAP = {
-	(64, 128, 64): 1,  # Animal
-	(192, 0, 128): 2,  # Archway
-	(0, 128, 192): 3,  # Bicyclist
-	(0, 128, 64): 4,  # Bridge
-	(128, 0, 0): 5,  # Building
-	(64, 0, 128): 6,  # Car
-	(64, 0, 192): 7,  # CartLuggagePram
-	(192, 128, 64): 8,  # Child
-	(192, 192, 128): 9,  # Column_Pole
-	(64, 64, 128): 10,  # Fence
-	(128, 0, 192): 11,  # LaneMkgsDriv
-	(192, 0, 64): 12,  # LaneMkgsNonDriv
-	(128, 128, 64): 13,  # Misc_Text
-	(192, 0, 192): 14,  # MotorcycleScooter
-	(128, 64, 64): 15,  # OtherMoving
-	(64, 192, 128): 16,  # ParkingBlock
-	(64, 64, 0): 17,  # Pedestrian
-	(128, 64, 128): 18,  # Road
-	(128, 128, 192): 19,  # RoadShoulder
-	(0, 0, 192): 20,  # Sidewalk
-	(192, 128, 128): 21,  # SignSymbol
-	(128, 128, 128): 22,  # Sky
-	(64, 128, 192): 23,  # SUVPickupTruck
-	(0, 0, 64): 24,  # TrafficCone
-	(0, 64, 64): 25,  # TrafficLight
-	(192, 64, 128): 26,  # Train
-	(128, 128, 0): 27,  # Tree
-	(192, 128, 192): 28,  # Truck_Bus
-	(64, 0, 64): 29,  # Tunnel
-	(192, 192, 0): 30,  # VegetationMisc
-	(0, 0, 0): 31,  # Void
-	(64, 192, 0): 32  # Wall
-}
+name: "CamVid"
+
+classes:
+  - name: Void
+    colors:
+      - [0, 0, 0]
+  - name: Sky
+    colors:
+      - [128, 128, 128]
+  - name: Building
+    colors:
+      - [128, 0, 0]
+      - [0, 128, 64]
+      - [64, 192, 0]
+      - [64, 0, 64]
+      - [192, 0, 128]
+  - name: TrafficCone
+    colors:
+      - [192, 192, 128]
+      - [0, 0, 64]
+  - name: Road
+    colors:
+      - [128, 64, 128]
+      - [128, 0, 192]
+      - [192, 0, 64]
+  - name: SideWalk
+    colors:
+      - [0, 0, 192]
+      - [64, 192, 128]
+      - [128, 128, 192]
+  - name: Tree
+    colors:
+      - [128, 128, 0]
+      - [192, 192, 0]
+  - name: Sign
+    colors:
+      - [192, 128, 128]
+      - [128, 128, 64]
+      - [0, 64, 64]
+  - name: Fence
+    colors:
+      - [64, 64, 128]
+  - name: Car
+    colors:
+      - [64, 0, 128]
+      - [64, 128, 192]
+      - [192, 128, 192]
+      - [192, 64, 128]
+      - [128, 64, 64]
+  - name: Pedestrian
+    colors:
+      - [64, 64, 0]
+      - [192, 128, 64]
+      - [64, 0, 192]
+      - [64, 128, 64]
+  - name: Bicycle
+    colors:
+      - [0, 128, 192]
+      - [192, 0, 192]
+
 ```
 
 Please make sure to cite the authors and give credit:
